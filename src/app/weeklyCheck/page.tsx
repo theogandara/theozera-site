@@ -3,8 +3,6 @@ import Image from "next/image";
 export default function WeeklyCheck() {
   return (
     <main className="flex min-h-screen flex-col gap-12 md:p-24 pt-0">
-      {/* <h1 className="text-4xl font-jet text-center">Weekly Check</h1> */}
-
       <h1 className="text-4xl font-jet text-center text-blue-500">
         <a
           className="text-blue-500 hover:underline"
