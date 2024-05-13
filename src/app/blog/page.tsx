@@ -6,9 +6,12 @@ interface ArticleProps {
   id: string;
 }
 
-const Article = ({ title, description, content, date }: ArticleProps) => {
+const Article = ({ title, description, content, date, id }: ArticleProps) => {
   return (
-    <div className="flex flex-col gap-4 p-4 border-2 border-[#5F606A] rounded-md shadow-md cursor-pointer hover:shadow-lg hover:border-2 hover:border-[#172448] transition duration-50">
+    <a
+      href={`/blog/${id}`}
+      className="flex flex-col gap-4 p-4 border-2 border-[#5F606A] rounded-md shadow-md cursor-pointer hover:shadow-lg hover:border-2 hover:border-[#172448] transition duration-50"
+    >
       <div>
         <h3 className="text-xl font-bold">{title}</h3>
         <p className="text-sm text-gray-600">{description}</p>
@@ -21,7 +24,7 @@ const Article = ({ title, description, content, date }: ArticleProps) => {
       <footer className="flex items-center justify-between text-sm text-gray-600">
         <p>{`Publicado em: ${date}`}</p>
       </footer>
-    </div>
+    </a>
   );
 };
 
