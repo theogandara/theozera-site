@@ -17,9 +17,7 @@ export const metadata: Metadata = {
 const items = [
   { name: "home", url: "/" },
   { name: "projetos", url: "/projects" },
-  { name: "sobre", url: "/about" },
   { name: "objetivos", url: "/objectives" },
-  { name: "planner", url: "/planner" },
   { name: "blog", url: "/blog" },
   { name: "weeklyCheck", url: "/weeklyCheck" },
 ];
