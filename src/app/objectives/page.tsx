@@ -1,10 +1,10 @@
+import { objectives } from "@/mocks/objectives";
+
 export default function Objectives() {
   return (
     <main className="flex min-h-screen flex-col gap-12 pt-0">
       <h1 className="text-4xl font-bold text-center">Objetivos</h1>
-
       <h2 className="text-xl font-bold text-center">Meus objetivos públicos</h2>
-
       <section className="grid grid-cols-1 gap-8">
         {objectives.map((objective) => (
           <Objective {...objective} key={objective.id} />
@@ -66,34 +66,3 @@ const Objective = ({ done, description, date }: any) => {
     </div>
   );
 };
-
-const objectives = [
-  {
-    done: false,
-    name: "Correr 5km",
-    description: "Correr 5km em menos de 30 minutos.",
-    date: "01/01/2021",
-    id: "1",
-  },
-  {
-    done: false,
-    name: "Academia",
-    description: "Ir à academia 3 vezes por semana.",
-    date: "02/01/2021",
-    id: "2",
-  },
-  {
-    done: false,
-    name: "Portugal",
-    description: "Conhecer Portugal.",
-    date: "03/01/2021",
-    id: "3",
-  },
-  {
-    done: true,
-    name: "Coragem pra ser diferente",
-    description: "Ser diferente.",
-    date: "03/01/2021",
-    id: "4",
-  },
-];
