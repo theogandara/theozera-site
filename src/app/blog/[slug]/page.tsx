@@ -1,11 +1,7 @@
 import { posts } from "@/mocks/blog";
 
-export default function Page(
-  props: Readonly<{
-    params: { slug: string };
-  }>
-) {
-  const post = posts.find((post) => post.id === props.params.slug);
+export default function Page() {
+  const post = posts.find((post) => post.id === "1");
 
   if (!post) {
     return <h1>Post não encontrado</h1>;
@@ -19,12 +15,3 @@ export default function Page(
     </main>
   );
 }
-
-export const getStaticPaths = async () => {
-  return {
-    paths: posts.map((post) => ({
-      params: { slug: post.id },
-    })),
-    fallback: false,
-  };
-};

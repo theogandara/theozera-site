@@ -15,9 +15,13 @@ export default function Nav(props: NavProps) {
   const maxW = props.items.length * 170;
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const [path, setPath] = useState("");
+  const [path, setPath] = useState<string | null | undefined>(pathname);
 
   const active = (url: string) => {
+    if (!path) {
+      return "bg-[#222325]";
+    }
+
     if (path.includes("blog") && url === "/blog") {
       return "bg-[#172448]";
     }
