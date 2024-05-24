@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import dynamic from "next/dynamic";
+import Test from "@/components/test/page";
 const Nav = dynamic(() => import("@/components/Nav"));
 
 const inter = Inter({ subsets: ["latin"] });
@@ -32,6 +33,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <main className="flex min-h-screen flex-col gap-12 p-4 md:px-24">
+          <Test />
           <Header />
           <Nav items={items} />
           {children}
