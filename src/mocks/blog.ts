@@ -1,16 +1,10 @@
 export const posts = [
   {
-    title: "Primeira corrida",
-    description: "Uma emocionante história de corrida automotiva.",
-    content: "Em uma manhã ensolarada, os motores roncaram",
-    date: "01/01/2021",
+    title: "Meu ano de 2023",
+    description: "Retornando os posts de retrospectiva",
+    content:
+      "O ano de 2023 foi cheio de altos e baixos. Comecei o ano com grandes expectativas e muitos projetos em mente. No entanto, a pandemia ainda estava presente e isso acabou afetando meus planos. Mesmo assim, consegui realizar muitas coisas e estou muito feliz com o que conquistei",
+    date: "01/01/2024",
     id: "1",
-  },
-  {
-    title: "teste2",
-    description: "Uma emocionante história de corrida automotiva.",
-    content: "teste",
-    date: "01/01/2023",
-    id: "2",
   },
 ];
