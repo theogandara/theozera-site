@@ -4,10 +4,8 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <main className="flex min-h-screen flex-col gap-12 pt-0">
-      <h1 className="text-4xl font-bold text-center">Projects</h1>
-
-      <div className="flex flex-wrap justify-center">
+    <main className="flex flex-col gap-12 pt-0">
+      <div className="w-[260px] sm:w-[520px] lg:w-[1040px] flex flex-wrap mx-auto">
         {projects.map((project) => (
           <ProjectCard key={project.name} {...project} />
         ))}
@@ -27,7 +25,7 @@ const ProjectCard = ({
 }) => {
   return (
     <Link href={link} target="_blank">
-      <div className="w-[300px] h-[300px] max-h-[300px] max-w-[300px] relative hover:cursor-pointer">
+      <div className="w-[260px] h-[260px] max-h-[260px] max-w-[260px] relative hover:cursor-pointer">
         <Image
           width={300}
           height={300}

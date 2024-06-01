@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "Ivo Vaz Imobiliária",
     image: "/ivo-vaz.png",
-    link: "",
+    link: "https://imobiliaria-white-label.vercel.app/",
   },
   {
     name: "App Ifuture",
