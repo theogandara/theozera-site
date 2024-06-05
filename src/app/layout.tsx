@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 const items = [
   { name: "home", url: "/" },
   { name: "projetos", url: "/projects" },
+  { name: "links", url: "/links" },
 ];
 
 export default function RootLayout({
