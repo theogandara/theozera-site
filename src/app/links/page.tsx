@@ -18,22 +18,22 @@ export default function Links() {
     },
     {
       name: "Gitlab",
-      url: "https://www.github.com/theogandara",
+      url: "https://www.gitlab.com/theogandara",
       icon: <GitlabLogo size={24} />,
     },
     {
       name: "Linkedin",
-      url: "https://www.github.com/theogandara",
+      url: "https://www.linkedin.com/in/theogandara",
       icon: <LinkedinLogo size={24} />,
     },
     {
       name: "Instagram",
-      url: "https://www.github.com/theogandara",
+      url: "https://www.instagram.com/theogandara",
       icon: <InstagramLogo size={24} />,
     },
     {
       name: "Youtube",
-      url: "https://www.github.com/theogandara",
+      url: "https://www.youtube.com/channel/UCTOR2K0FpE80iB5ZSERr1Ww",
       icon: <YoutubeLogo size={24} />,
     },
   ];
